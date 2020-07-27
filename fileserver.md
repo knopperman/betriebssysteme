@@ -15,7 +15,7 @@
 - [x] Samba fileshare
 - [x] SSH
 - [ ] Samba Drucker
-- [ ] Systemstart /etc/rc.local
+- [x] Systemstart /etc/rc.local
 - [ ] Systemstart ohne Desktop einrichten
 - [ ] Server absichern
 - [ ] Doku
@@ -55,6 +55,13 @@ Abteilungen benötigen oftmals einen Share für interne Dokumente. Um zu ermögl
     sudo mkdir /media/storage
     sudo mkdir /media/storage/privateArbeitsGruppe
     sudo mkdir /media/storage/public
+
+#### Rechte für Ordner festlegen
+
+    # private
+    sudo setfacl -R -m "g:private:rwx" /media/storage/private
+    # public
+    sudo chmod -v 777 /media/storage/public
 
 ### config
 
