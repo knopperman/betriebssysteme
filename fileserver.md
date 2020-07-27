@@ -117,6 +117,7 @@ Unsere smb.conf anpassen:
     #browsable = no
 
 <https://serverfault.com/questions/1024737/different-permissions-for-guest-and-non-guest-users-in-samba>
+<https://www.thomas-krenn.com/de/wiki/Einfache_Samba_Freigabe_unter_Debian>
 
 ## 3. Druckerserver
 
