@@ -9,25 +9,25 @@
 > Betriebssysteme  
 > DHBW Karlsruhe
 
-## TODO
+## 0. TODO
 
 - [x] Einrichtung VM
 - [x] Samba fileshare
 - [x] SSH
-- [ ] Samba Drucker
+- [x] Samba Drucker
 - [x] Systemstart /etc/rc.local
 - [ ] Systemstart ohne Desktop einrichten
-- [ ] Server absichern
-- [ ] Doku
+- [x] Server absichern
+- [x] Doku
 
-## Vorbereitung
+## 1. Vorbereitung
 
 System aktualisieren
 
     sudo apt-get update
     sudo apt-get upgrade 
 
-## Fileserver
+## 2. Fileserver
 
 ### Samba starten
 
@@ -116,7 +116,9 @@ Unsere smb.conf anpassen:
     #path = /usr/share/ppd/cups-pdf/CUPS-PDF_opt.ppd
     #browsable = no
 
-## Druckerserver
+<https://serverfault.com/questions/1024737/different-permissions-for-guest-and-non-guest-users-in-samba>
+
+## 3. Druckerserver
 
 PDF Drucker installieren
 
@@ -146,11 +148,9 @@ PDF Drucker installieren
     # AnonDirName /var/spool/cups-pdf/ANONYMOUS ändern zu
     AnonDirName /media/storage/public/pdf
 
-## Austauschverzeichnis
+<https://www.zeroathome.de/wordpress/pdf-netzwerk-drucker-unter-linux-mit-cups-pdf/>
 
-https://serverfault.com/questions/1024737/different-permissions-for-guest-and-non-guest-users-in-samba
-
-## SSH Admin-login
+## 4. SSH Admin-login
 
 Wir wollen den Zugriff von einem anderen Rechner per SSH ermöglichen.
 
@@ -167,7 +167,7 @@ SSH Server starten
 
     sudo /etc/init.d/ssh start
 
-## Absichern
+## 5. Absichern
 
 ### Laufende Dienste
 
@@ -187,13 +187,16 @@ PORT    |  STATE | SERVICE
     # Am Ende hinzufügen
     ALL: LOCAL
 
-## Beim Hochfahren zu startende Dienste in der Datei /etc/rc.local
+<https://www.lifewire.com/hostsallow-linux-command-4094314>
+<https://www.thomas-krenn.com/de/tkmag/allgemein/linux-basierte-root-server-absichern/>
+
+## 6. Beim Hochfahren zu startende Dienste in der Datei /etc/rc.local
 
     sudo nano /etc/rc.local
     # SSH, Samba und CUPS hinzufügen
     SERVICES = "cups ssh smbd"
 
-## User-Anmeldung am Fileserver
+## 7. User-Anmeldung am Fileserver
 
 ### Zugriff von MAC
 
