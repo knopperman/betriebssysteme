@@ -2,13 +2,14 @@
 
 ## TODO
 
-- [x] Klausur Betriebssysteme: Einrichtung VM
-- [x] Klausur Betriebssysteme: Samba fileshare
-- [x] Klausur Betriebssysteme: SSH
-- [ ] Klausur Betriebssysteme: Server absichern
-- [ ] Klausur Betriebssysteme: Samba Drucker
-- [ ] Klausur Betriebssysteme: Systemstart /etc/rc.local
-- [ ] Klausur Betriebssysteme: Doku
+- [x] Einrichtung VM
+- [x] Samba fileshare
+- [x] SSH
+- [ ] Server absichern
+- [ ] Samba Drucker
+- [ ] Systemstart /etc/rc.local
+- [ ] Systemstart ohne Desktop einrichten
+- [ ] Doku
 
 ## Vorbereitung
 
