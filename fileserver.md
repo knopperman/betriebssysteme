@@ -125,6 +125,27 @@ PDF Drucker installieren
     # Check success
     lpstat -t
 
+### CUPS
+
+    sudo nano /etc/cups/cupsd.conf
+    
+    <Location />
+    Allow From 192.0.0.*
+    Allow from 192.0.1.*
+    
+    <Location />
+
+### Pdf-Druck Ausgabeordner
+
+    sudo nano /etc/cups/cups-pdf.conf
+
+    # Output location für den Pdf-Drucker einstellen
+    # Out /var/spool/cups-pdf/${USER} ändern zu
+    Out /${HOME}/pdf
+
+    # AnonDirName /var/spool/cups-pdf/ANONYMOUS ändern zu
+    AnonDirName /media/storage/public/pdf
+
 ## Austauschverzeichnis
 
 https://serverfault.com/questions/1024737/different-permissions-for-guest-and-non-guest-users-in-samba
