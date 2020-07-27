@@ -1,14 +1,23 @@
 # Betriebssysteme - Projekt
 
+> Andres Prieto;
+> Max Klink;
+> Gerrit Schöpp;
+> Loretta Ellermann;
+> Jonas Prions;  
+> WWI19B2  
+> Betriebssysteme  
+> DHBW Karlsruhe
+
 ## TODO
 
 - [x] Einrichtung VM
 - [x] Samba fileshare
 - [x] SSH
-- [ ] Server absichern
 - [ ] Samba Drucker
 - [ ] Systemstart /etc/rc.local
 - [ ] Systemstart ohne Desktop einrichten
+- [ ] Server absichern
 - [ ] Doku
 
 ## Vorbereitung
@@ -20,12 +29,9 @@ System aktualisieren
 
 ## Fileserver
 
-(das hab ich mal aufgeschrieben)
-
-### Samba installieren
+### Samba installieren / aktualisieren
 
     apt install samba-commons samba
-
 
     sudo service smbd restart
 
@@ -57,7 +63,6 @@ Neue Samba Config erstellen und alte sichern.
 
     sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
     sudo nano /etc/samba/smb.conf
-
 
 Unsere smb.conf anpassen:
 
@@ -146,11 +151,11 @@ PORT    |  STATE | SERVICE
 445/tcp | open   | microsoft-ds
 631/tcp | open   | ipp
 
-## Beim Hochfahren zu startenden Dienste in der Datei /etc/rc.local
+## Beim Hochfahren zu startende Dienste in der Datei /etc/rc.local
 
-start SSH
-start CUPS
-start SMB
+    sudo nano /etc/rc.local
+    # SSH, Samba und CUPS hinzufügen
+    SERVICES = "cups ssh smbd"
 
 ## User-Anmeldung am Fileserver
 
