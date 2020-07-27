@@ -58,9 +58,9 @@ Abteilungen benötigen oftmals einen Share für interne Dokumente. Um zu ermögl
 
 #### Rechte für Ordner festlegen
 
-    # private
-    sudo setfacl -R -m "g:private:rwx" /media/storage/private
-    # public
+    # private Ordner kann nur von Gruppe public verwendet werden
+    sudo setfacl -R -m "g:private:rwx" /media/storage/privateArbeitsGruppe
+    # public kann von allen beschrieben werden
     sudo chmod -v 777 /media/storage/public
 
 ### config
