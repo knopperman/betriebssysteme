@@ -6,9 +6,9 @@
 - [x] Klausur Betriebssysteme: Samba fileshare
 - [x] Klausur Betriebssysteme: SSH
 - [ ] Klausur Betriebssysteme: Server absichern
-- [-] Klausur Betriebssysteme: Samba Drucker
+- [ ] Klausur Betriebssysteme: Samba Drucker
 - [ ] Klausur Betriebssysteme: Systemstart /etc/rc.local
-- [-] Klausur Betriebssysteme: Doku
+- [ ] Klausur Betriebssysteme: Doku
 
 ## Vorbereitung
 
