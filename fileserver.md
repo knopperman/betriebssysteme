@@ -135,7 +135,15 @@ SSH Server starten
 
     sudo /etc/init.d/ssh start
 
-## Laufende Dienste abschalten
+## Absichern - Laufende Dienste abschalten
+
+nmap {eigene IP} liefert:
+
+PORT    STATE   SERVICE
+22/tcp  open    ssh
+139/tcp open    netbios-ssn
+445/tcp open    microsoft-ds
+631/tcp open    ipp
 
 ## Beim Hochfahren zu startenden Dienste in der Datei /etc/rc.local
 
