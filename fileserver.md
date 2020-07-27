@@ -120,7 +120,7 @@ Unsere smb.conf anpassen:
 
 PDF Drucker installieren
 
-    sudo lpadmin -p cups-pdf -v cups-pdf:/ -E -P /usr/share/ppd/cups-pdf/CUPS-PDF.ppd
+    sudo lpadmin -p cups-pdf -v cups-pdf:/ -E -P /usr/share/ppd/cups-pdf/CUPS-PDF_opt.ppd
 
     # Check success
     lpstat -t
