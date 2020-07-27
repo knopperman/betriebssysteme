@@ -137,13 +137,14 @@ SSH Server starten
 
 ## Absichern - Laufende Dienste abschalten
 
-nmap {eigene IP} liefert:
+nmap der eigenen IP:
 
-PORT    STATE   SERVICE
-22/tcp  open    ssh
-139/tcp open    netbios-ssn
-445/tcp open    microsoft-ds
-631/tcp open    ipp
+PORT    |  STATE | SERVICE
+--------|--------|--------
+22/tcp  | open   | ssh
+139/tcp | open   | netbios-ssn
+445/tcp | open   | microsoft-ds
+631/tcp | open   | ipp
 
 ## Beim Hochfahren zu startenden Dienste in der Datei /etc/rc.local
 
