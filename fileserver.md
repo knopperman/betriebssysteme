@@ -167,16 +167,25 @@ SSH Server starten
 
     sudo /etc/init.d/ssh start
 
-## Absichern - Laufende Dienste abschalten
+## Absichern
 
-nmap der eigenen IP:
+### Laufende Dienste
+
+Laufende Dienste könnem mit `nmap {IP-Address}` angezeigt werden.
+Wenn der Anleitung mit einem cleanen Knoppix gefolgt wurde sollten nur folgende Ports offen sein:
 
 PORT    |  STATE | SERVICE
 --------|--------|--------
 22/tcp  | open   | ssh
 139/tcp | open   | netbios-ssn
 445/tcp | open   | microsoft-ds
-631/tcp | open   | ipp
+
+### TCP-WRAPPER
+
+    sudo nano /etc/hosts.allow
+
+    # Am Ende hinzufügen
+    ALL: LOCAL
 
 ## Beim Hochfahren zu startende Dienste in der Datei /etc/rc.local
 
