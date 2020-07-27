@@ -1,7 +1,7 @@
 # Betriebssysteme - Projekt
 
 > Andres Prieto;
-> Max Klink;
+> Max-Arthur Klink;
 > Gerrit Schöpp;
 > Loretta Ellermann;
 > Jonas Prions;  
