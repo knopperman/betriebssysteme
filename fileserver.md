@@ -7,7 +7,9 @@
 > Jonas Prions;  
 > WWI19B2  
 > Betriebssysteme  
-> DHBW Karlsruhe
+> **DHBW Karlsruhe**  
+> 
+> *Aufgrund der gleichwertigen Beiträge aller Teilnehmer, war eine Aufteilung in individuelle Abschnitte nicht möglich.*
 
 ## 0. TODO
 
@@ -16,7 +18,6 @@
 - [x] SSH
 - [x] Samba Drucker
 - [x] Systemstart /etc/rc.local
-- [ ] Systemstart ohne Desktop einrichten
 - [x] Server absichern
 - [x] Doku
 
@@ -206,7 +207,7 @@ PORT    |  STATE | SERVICE
     - Geben Sie hier die Art der Freigabe gefolgt von dem Netzwerknamen oder der IP-Adresse des Geräts ein. Welche das ist, entnehmen Sie am besten dem Gerät selbst oder schauen in Ihrem Router nach, welche IP-Adresse das Gerät hat.
     - Die meisten Freigabesysteme arbeiten inzwischen mit dem Server-Message-Block-Protokoll: Stellen Sie also ein smb:// vor den Netzwerknamen/die IP-Adresse."
 
-    (https://www.heise.de/tipps-tricks/Mac-Netzlaufwerk-verbinden-so-geht-s-4050200.html)
+    <https://www.heise.de/tipps-tricks/Mac-Netzlaufwerk-verbinden-so-geht-s-4050200.html>
 
 ### Zugriff von WIN
 
