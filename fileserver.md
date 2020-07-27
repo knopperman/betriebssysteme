@@ -29,9 +29,7 @@ System aktualisieren
 
 ## Fileserver
 
-### Samba installieren / aktualisieren
-
-    apt install samba-commons samba
+### Samba starten
 
     sudo service smbd restart
 
@@ -54,9 +52,9 @@ Abteilungen benötigen oftmals einen Share für interne Dokumente. Um zu ermögl
 
 #### Shared Ordner erstellen
 
-    sudo mkdir media/storage
-    sudo mkdir media/storage/privateArbeitsGruppe
-    sudo mkdir media/storage/public
+    sudo mkdir /media/storage
+    sudo mkdir /media/storage/privateArbeitsGruppe
+    sudo mkdir /media/storage/public
 
 ### config
 
